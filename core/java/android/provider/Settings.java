@@ -6986,6 +6986,15 @@ public final class Settings {
          * @hide
          */
         public static final String ADB_PORT = "adb_port";
+         * Beginning of Pure Secure Settings Additions
+         * @hide
+         */
+
+        /**
+         * Whether to display the ADB notification.
+         * @hide
+         */
+        public static final String ADB_NOTIFY = "adb_notify";
 
         /**
          * This are the settings to be backed up.
