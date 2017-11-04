@@ -776,4 +776,34 @@
 
     <dimen name="qs_gutter_height">6dp</dimen>
 
+    <dimen name="hwui_edge_margin">16dp</dimen>
+
+    <dimen name="global_actions_panel_width">120dp</dimen>
+
+    <dimen name="global_actions_top_padding">120dp</dimen>
+
+    <!-- the maximum offset in either direction that elements are moved horizontally to prevent
+            burn-in on AOD -->
+    <dimen name="burn_in_prevention_offset_x">8dp</dimen>
+
+    <!-- the maximum offset in either direction that elements are moved vertically to prevent
+            burn-in on AOD -->
+    <dimen name="burn_in_prevention_offset_y">50dp</dimen>
+
+    <!-- padding between the notification stack and the keyguard status view when dozing -->
+    <dimen name="dozing_stack_padding">10dp</dimen>
+
+    <dimen name="corner_size">16dp</dimen>
+    <dimen name="top_padding">0dp</dimen>
+    <dimen name="bottom_padding">48dp</dimen>
+    <dimen name="edge_margin">16dp</dimen>
+
+    <dimen name="rounded_corner_radius">0dp</dimen>
+    <dimen name="rounded_corner_content_padding">0dp</dimen>
+
+    <!-- Intended corner radius when drawing the mobile signal -->
+    <dimen name="stat_sys_mobile_signal_corner_radius">0.75dp</dimen>
+    <!-- How far to inset the rounded edges -->
+    <dimen name="stat_sys_mobile_signal_circle_inset">0.9dp</dimen>
+
 </resources>
