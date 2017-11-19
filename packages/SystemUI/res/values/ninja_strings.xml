@@ -32,4 +32,37 @@
 
     <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Screenshot</string>
+    <string name="quick_settings_partial_screenshot_label">Partial screenshot</string>
+
+    <!-- QuickSettings: Alert slider tile related strings (re-using some of the do not disturb ones) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_alert_slider_unavailable">Alert slider tile not available</string>
+    <string name="quick_settings_alert_slider_detail_alarms_only_description">This blocks ALL sounds and vibrations except those from alarms and media playback.</string>
+    <string name="quick_settings_alert_slider_none_label">All notifications</string>
+    <string name="quick_settings_alert_slider_detail_disabled_message_description">Additional settings are not available when do not disturb is off.</string>
+
+    <string name="zen_footer_alert_slider_priority_only_summary">Specified notifications only</string>
+    <string name="zen_footer_alert_slider_alarms_only_summary">Alarms and media playback only</string>
+    <string name="zen_footer_alert_slider_no_interruptions_summary">No sounds and interruptions</string>
+
+    <string name="quick_settings_alert_slider_detail_priority_events_title">Events</string>
+    <string name="quick_settings_alert_slider_detail_priority_reminders_title">Reminders</string>
+
+    <string name="alert_on_charged_level">Battery is at optimal level. You can now disconnect the charger</string>
+    <string name="battery_level_good_title">Optimally charged</string>
+    <string name="battery_level_good_sound" translatable="false">/system/media/audio/ui/GoodBattery.ogg</string>
+    <string name="notification_channel_charge_alert">Optimal battery charge level</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time">Dash Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> until full)</string>
+    <string name="keyguard_plugged_in_dash_charging">Dash Charging</string>
+  
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
+	
+	<!-- Notification: Menu row: Snooze options: 5/12/24 hour options. [CHAR LIMIT=50]-->
+	<string name="snooze_option_5_hour">5 hours</string>
+	<string name="snooze_option_12_hour">12 hours</string>
+    <string name="snooze_option_24_hour">24 hours</string>
 </resources>
