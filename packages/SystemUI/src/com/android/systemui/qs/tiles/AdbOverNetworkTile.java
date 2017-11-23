@@ -107,7 +107,7 @@ public class AdbOverNetworkTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.GZOSP;
+        return MetricsEvent.NinjaOS;
     }
 
     private boolean isAdbEnabled() {
