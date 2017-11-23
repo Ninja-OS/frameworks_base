@@ -225,11 +225,9 @@ public final class PowerManagerService extends SystemService
     private static final int HALT_MODE_REBOOT_SAFE_MODE = 2;
     private static final int BUTTON_ON_DURATION = 5 * 1000;
 
-    private static final int BUTTON_ON_DURATION = 5 * 1000;
-
     // File location for last reboot reason
     private static final String LAST_REBOOT_LOCATION = "/data/misc/reboot/last_reboot_reason";
-    
+
     private static final float PROXIMITY_NEAR_THRESHOLD = 5.0f;
 
     private final Context mContext;
