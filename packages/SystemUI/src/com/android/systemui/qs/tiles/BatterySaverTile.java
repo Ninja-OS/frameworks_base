@@ -116,9 +116,9 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
     @Override
     protected void handleUpdateState(BooleanState state, Object arg) {
 
-        mHasDashCharger = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_hasDashCharger);
-        mDashCharger = mHasDashCharger && isDashCharger();
+        //mHasDashCharger = mContext.getResources().getBoolean(
+        //        com.android.internal.R.bool.config_hasDashCharger);
+        //mDashCharger = mHasDashCharger && isDashCharger();
 
         state.state = mCharging ? Tile.STATE_UNAVAILABLE
                 : mPowerSave ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE;
@@ -126,11 +126,11 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
             state.icon = ResourceIcon.get(R.drawable.ic_qs_battery_saver_charging);
             state.label = mContext.getString(R.string.keyguard_plugged_in);
         }
-        if (mDashCharger) {
-            state.icon = ResourceIcon.get(R.drawable.ic_qs_battery_saver_charging);
-            state.label = mContext.getString(R.string.keyguard_plugged_in_dash_charging);
-        }
-        if (!mDashCharger && !mCharging) {
+        //if (mDashCharger) {
+        //    state.icon = ResourceIcon.get(R.drawable.ic_qs_battery_saver_charging);
+        //    state.label = mContext.getString(R.string.keyguard_plugged_in_dash_charging);
+        //}
+        if (!mCharging) {
             state.icon = ResourceIcon.get(R.drawable.ic_qs_battery_saver);
             state.label = mContext.getString(R.string.battery_detail_switch_title);
         }
@@ -302,17 +302,17 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
         };
     }
 
-    private boolean isDashCharger() {
-        try {
-            FileReader file = new FileReader("/sys/class/power_supply/battery/fastchg_status");
-            BufferedReader br = new BufferedReader(file);
-            String state = br.readLine();
-            br.close();
-            file.close();
-            return "1".equals(state);
-        } catch (FileNotFoundException e) {
-        } catch (IOException e) {
-        }
-        return false;
-    }
+    //private boolean isDashCharger() {
+    //    try {
+    //         FileReader file = new FileReader("/sys/class/power_supply/battery/fastchg_status");
+    //        BufferedReader br = new BufferedReader(file);
+    //         String state = br.readLine();
+    //        br.close();
+    //        file.close();
+    //        return "1".equals(state);
+    //    } catch (FileNotFoundException e) {
+    //    } catch (IOException e) {
+    //    }
+    //    return false;
+    //}
 }
