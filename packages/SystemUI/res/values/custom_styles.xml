@@ -24,7 +24,6 @@
         <item name="android:layout_centerVertical">true</item>
     </style>
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Burn-in protection -->
     <dimen name="horizontal_max_swift">3.0dp</dimen>
     <dimen name="vertical_max_swift">1.0dp</dimen>
