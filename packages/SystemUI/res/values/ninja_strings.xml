@@ -3,7 +3,6 @@
 /**
  * Copyright (c) 2009, The Android Open Source Project
  * Copyright (c) 2017, GZOSP
- * Copyright (c) 2017, NinjaOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,5 +32,10 @@
 
     <string name="screenshot_abort_title">No screenshot taken</string>
     <string name="screenshot_abort_text">Operation aborted.</string>
+
+    <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Open Running Services screen.</string>
+
+    <string name="statusbar_items_title">Statusbar icon</string>
 
 </resources>
